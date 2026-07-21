@@ -1,0 +1,15 @@
+2026-07-16 00:01:41.695992+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SHOES" not found; SQL statement:
+SELECT * FROM SHOES [42102-240]
+2026-07-16 00:27:35.179318+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "TRUNCATE [*]SHOWS"; expected "TABLE"; SQL statement:
+TRUNCATE SHOWS [42001-240]
+2026-07-16 00:31:00.285988+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "TRUNCATE [*]SHOWS"; expected "TABLE"; SQL statement:
+TRUNCATE SHOWS [42001-240]
+2026-07-16 16:26:48.960141+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RESERVATIONS" not found; SQL statement:
+SELECT * FROM RESERVATIONS [42102-240]
+2026-07-16 16:28:08.560386+05:30 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLTimeoutException: Timeout trying to lock table "SHOW_SEAT"; SQL statement:
+select ss1_0.id,ss1_0.price,ss1_0.reservation_id,ss1_0.seat_id,ss1_0.show_id,ss1_0.status from show_seat ss1_0 where ss1_0.id in (?,?,?) for update [50200-240]
