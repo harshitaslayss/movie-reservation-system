@@ -28,9 +28,13 @@ services:
       - "8080:8080"
 
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/system_db
-      SPRING_DATASOURCE_USERNAME: admin
-      SPRING_DATASOURCE_PASSWORD: harshita
+          SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/system_db
+          SPRING_DATASOURCE_USERNAME: admin
+          SPRING_DATASOURCE_PASSWORD: harshita
+          SPRING_REDIS_HOST: redis
+          SPRING_REDIS_PORT: 6379
+          JWT_SECRET: 5367566859703373367639792F423F452848284D6251655468576D5A71347437
+
 
   pgadmin:
     image: dpage/pgadmin4
