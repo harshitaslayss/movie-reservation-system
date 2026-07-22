@@ -101,6 +101,26 @@ JWT_SECRET=your_secret_key
 
 Or run the application directly from your IDE.
 
+## Docker
+
+Build locally:
+
+```bash
+docker build -t movie-reservation-system .
+```
+
+Run:
+
+```bash
+docker run -p 8080:8080 movie-reservation-system
+```
+
+Or pull from Docker Hub:
+
+```bash
+docker pull sharmajikibetiftw/movie-reservation-system:latest
+```
+
 ## API Documentation
 
 Once the application is running, Swagger UI is available at:
